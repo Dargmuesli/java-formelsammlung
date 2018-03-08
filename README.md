@@ -119,7 +119,7 @@ class Program {
     public static void main(String[] args) {
         // Dieser Code wird bei Programstart ausgeführt
     }
-    
+
     // Weitere Methoden
 }
 ```
@@ -132,7 +132,7 @@ class Sohn extends Vater {  // Die Klasse Sohn erbt von Vater
 ---
 ```Java
 abstract class AbstrakteKlasse { // Muss abstrakt sein, wenn eine abstrakte Methode enthalten ist
-    // Abstrakte Klassen können (im Gegensatz zu nicht abstrakte Unterklassen) nicht instanziert werden
+    // Abstrakte Klassen können (im Gegensatz zu nicht abstrakte Unterklassen) nicht instanziiert werden
     // Der Typ darf dennoch die abstrakte Oberklasse sein: `AbstrakteKlasse a = new NichtAbstrakteUnterkls;`
 
     abstract void abstrakteMethode();
