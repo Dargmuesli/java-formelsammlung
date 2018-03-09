@@ -260,3 +260,24 @@ static int fibonacci(int n) {
     }
 }
 ```
+
+## Weiteres
+
+### Gleitpunktzahl-Grammatik
+```
+Ziffer = "0" | "1" | "2" | "3" | "4" | "5" | "6" | "6" | "7" | "8" | "9".
+Zahl = Ziffer {Ziffer}.
+Gleitkommazahl = Zahl "." Zahl ["E" ["+"|"-"] Zahl].
+```
+
+### Speicherverwaltung
+- **Method Area**
+  - Klassen (inkl. Bytecode der Methoden und Klassenvariablen)
+- **Stack**
+  - Lokale Variablen
+  - Parameter von Methoden
+  - Rücksprungadresse
+  - Hilfsvariablen der JVM
+- **Heap**
+  - Arrays
+  - Objekte (inkl. Attribute und Klassenverweise)
