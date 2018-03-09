@@ -207,10 +207,12 @@ class MyNewFile {
         File file;
         String filename;
         Scanner s = new Scanner(System.in);
+
         do {
             System.out.print("Bitte Dateiname eingeben: ");
             filename = s.nextLine();
         } while ((new File(filename)).exists());
+
         PrintWriter pw = new PrintWriter(filename);
         pw.println("Datei erfolgreich angelegt");
         System.out.println("Habe soeben in die Datei " + filename + " geschrieben");
